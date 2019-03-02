@@ -48,7 +48,7 @@
 
 	<!-- 扫描生成所有dao层 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="me.melo.dao"></property>
+		<property name="basePackage" value="com.baicai.dao"></property>
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
 </beans>

@@ -13,6 +13,11 @@
 		<setting name="lazyLoadingEnabled" value="true" />
 	</settings>
 
+	<!-- 定义实体类别名 -->
+	<typeAliases>
+		<typeAlias type="com.baicai.UserPO" alias="UserPO" />
+	</typeAliases>
+
 	<!-- 分页插件 -->
 	<plugins>
 		<plugin interceptor="com.github.pagehelper.PageInterceptor">
