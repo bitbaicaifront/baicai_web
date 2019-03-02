@@ -1,0 +1,6 @@
+me\melo\dao\MemberDao.class
+me\melo\utils\StringUtil.class
+me\melo\domain\Member.class
+me\melo\service\impl\MemberServiceImpl.class
+me\melo\service\IMemberService.class
+me\melo\controller\LoginController.class
