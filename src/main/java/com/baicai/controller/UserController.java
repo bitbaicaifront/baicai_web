@@ -25,9 +25,17 @@ public class UserController {
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
     
     /*
+	 * ≤‚ ‘øÁ”Ú
+	 */
+	@RequestMapping("/api/test")
+	public @ResponseBody void test(HttpServletRequest req, HttpServletResponse hsr) {
+		logger.info("≤‚ ‘øÁ”Ú");
+	}
+    
+    /*
 	 * ”√ªßµ«¬º
 	 */
-	@RequestMapping("login")
+	@RequestMapping("/api/login")
 	public @ResponseBody void login(@RequestParam String account,
 			@RequestParam String password, HttpServletRequest req, HttpServletResponse hsr) {
 		JSONObject responseData = new JSONObject();

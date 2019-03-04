@@ -15,7 +15,7 @@
 
 	<!-- 定义实体类别名 -->
 	<typeAliases>
-		<typeAlias type="com.baicai.UserPO" alias="UserPO" />
+		<typeAlias type="com.baicai.domain.UserPO" alias="UserPO" />
 	</typeAliases>
 
 	<!-- 分页插件 -->

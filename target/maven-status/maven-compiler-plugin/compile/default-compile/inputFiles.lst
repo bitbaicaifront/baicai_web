@@ -1,6 +1,6 @@
-E:\EclipseWorkspace\ssm-maven\src\main\java\me\melo\controller\LoginController.java
-E:\EclipseWorkspace\ssm-maven\src\main\java\me\melo\domain\Member.java
-E:\EclipseWorkspace\ssm-maven\src\main\java\me\melo\service\impl\MemberServiceImpl.java
-E:\EclipseWorkspace\ssm-maven\src\main\java\me\melo\dao\MemberDao.java
-E:\EclipseWorkspace\ssm-maven\src\main\java\me\melo\service\IMemberService.java
-E:\EclipseWorkspace\ssm-maven\src\main\java\me\melo\utils\StringUtil.java
+E:\EclipseWorkspace\baicai_web\src\main\java\com\baicai\controller\UserController.java
+E:\EclipseWorkspace\baicai_web\src\main\java\com\baicai\utils\NetUtil.java
+E:\EclipseWorkspace\baicai_web\src\main\java\com\baicai\utils\StringUtil.java
+E:\EclipseWorkspace\baicai_web\src\main\java\com\baicai\domain\UserPO.java
+E:\EclipseWorkspace\baicai_web\src\main\java\com\baicai\service\UserService.java
+E:\EclipseWorkspace\baicai_web\src\main\java\com\baicai\dao\UserDao.java

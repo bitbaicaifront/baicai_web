@@ -1,6 +1,6 @@
-me\melo\dao\MemberDao.class
-me\melo\utils\StringUtil.class
-me\melo\domain\Member.class
-me\melo\service\impl\MemberServiceImpl.class
-me\melo\service\IMemberService.class
-me\melo\controller\LoginController.class
+com\baicai\dao\UserDao.class
+com\baicai\utils\NetUtil.class
+com\baicai\service\UserService.class
+com\baicai\controller\UserController.class
+com\baicai\domain\UserPO.class
+com\baicai\utils\StringUtil.class

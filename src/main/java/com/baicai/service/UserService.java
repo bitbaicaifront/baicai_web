@@ -14,8 +14,8 @@ public class UserService {
 
 	public boolean findUserService(String account, String password) {
 		UserPO user = userDao.findUserDao(account);
-		
-		return false;
+		System.out.println(user.getAccount());
+		return true;
 	}
 
 	public void updateUserService(String account) {
