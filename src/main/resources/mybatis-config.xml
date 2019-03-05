@@ -11,6 +11,9 @@
 		<!-- 代理 -->
 		<setting name="proxyFactory" value="CGLIB" />
 		<setting name="lazyLoadingEnabled" value="true" />
+		<!-- 打印sql -->
+		<!-- <setting name="logImpl" value="STDOUT_LOGGING" /> -->
+		<setting name="logImpl" value="LOG4J"/>
 	</settings>
 
 	<!-- 定义实体类别名 -->

@@ -39,6 +39,9 @@ public class UserController {
 	public @ResponseBody void login(@RequestParam String account,
 			@RequestParam String password, HttpServletRequest req, HttpServletResponse hsr) {
 		JSONObject responseData = new JSONObject();
+		logger.info("test info");
+		logger.error("test error");
+		logger.debug("test debug");
 		try {
 			boolean flag = userService.findUserService(account, password);
 			if(flag == true) {
