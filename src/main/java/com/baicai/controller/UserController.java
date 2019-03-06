@@ -19,42 +19,46 @@ import com.baicai.utils.NetUtil;
 
 @Controller
 public class UserController {
-    @Autowired
-    UserService userService;
+	@Autowired
+	UserService userService;
 
-    private static Logger logger = LoggerFactory.getLogger(UserController.class);
-    
-    /*
+	private static Logger logger = LoggerFactory.getLogger(UserController.class);
+
+	/*
 	 * 测试跨域
 	 */
 	@RequestMapping("/api/test")
 	public @ResponseBody void test(HttpServletRequest req, HttpServletResponse hsr) {
 		logger.info("测试跨域");
 	}
-    
-    /*
+
+	/*
 	 * 用户登录
 	 */
 	@RequestMapping("/api/login")
-	public @ResponseBody void login(@RequestParam String account,
-			@RequestParam String password, HttpServletRequest req, HttpServletResponse hsr) {
+	public @ResponseBody void login(@RequestParam String account, @RequestParam String password, HttpServletRequest req,
+			HttpServletResponse hsr) {
 		JSONObject responseData = new JSONObject();
-		logger.info("test info");
-		logger.error("test error");
-		logger.debug("test debug");
 		try {
-			boolean flag = userService.findUserService(account, password);
-			if(flag == true) {
+			int flag = userService.findUserService(account, password);
+			if (flag == 0) {
 				responseData.put("state", 0);
 				responseData.put("msg", "登录成功");
-			} else {
-				// 密码输入错误就将数据库里这个用户的登录失败次数加
-				userService.updateUserService(account);
-				responseData.put("state", 1);
-				responseData.put("msg", "登录失败");
+			} else if (flag == -1) {
+
+				responseData.put("state", -1);
+				responseData.put("msg", "用户不存在");
+			} else if (flag == -2) {
+
+				responseData.put("state", -2);
+				responseData.put("msg", "密码错误");
+			} else if (flag == -2) {
+
+				responseData.put("state", -3);
+				responseData.put("msg", "今天已输错密码5次，请明天再登录");
 			}
 			responseData.put("data", null);
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 			if (logger.isInfoEnabled()) {

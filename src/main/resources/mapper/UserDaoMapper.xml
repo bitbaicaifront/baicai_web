@@ -8,4 +8,9 @@
 		from user
 		WHERE account=#{account}
 	</select>
+	<update id="updateUserLoginDao" parameterType="HashMap">
+		update user
+		set login_time=#{login_time}, last_login_date=now()
+		WHERE account=#{account}
+	</update>
 </mapper>
